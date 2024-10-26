@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import Link from 'next/link';
+import { FaTimes } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
@@ -63,8 +64,8 @@ const Navbar: React.FC = () => {
     
       <div className={`fixed inset-0 bg-gray-900 bg-opacity-75 z-40 md:hidden transition-opacity duration-300 ease-in-out ${isSidebarOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className={`fixed top-0 left-0 w-2/3 bg-white h-full p-4 transition-transform duration-300 ease-in-out transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-          <button className='absolute top-4 right-4 text-3xl font-bold' onClick={toggleSidebar}>
-            &times;
+          <button className='absolute top-4 right-4 text-xl font-semibold' onClick={toggleSidebar}>
+            <FaTimes />
           </button>
           <ul className='flex flex-col items-start mt-10'>
             {links.map((link, index) => (
