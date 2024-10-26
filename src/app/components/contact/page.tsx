@@ -18,8 +18,8 @@ export default function ContactSection() {
             <h3 className="font-semibold lg:text-2xl md:text-xl text-md text-green-900">Get in Touch</h3>
             <h2 className="lg:text-3xl md:text-2xl text-xl font-semibold">Your Trusted Design Partners</h2>
             <p className="md:mt-8 mt-4 lg:text-xl md:text-lg text-md md:w-[80%] w-full">
-              Whether you're building, renovating, or simply redecorating, we're here to bring your vision to life. Contact us to discuss your project ideas and make them a reality.
-            </p>
+  Whether you&apos;re building, renovating, or simply redecorating, we&apos;re here to bring your vision to life. Contact us to discuss your project ideas and make them a reality.
+</p>
 
             <div className="mt-6 space-y-2 bg-gray-200 md:w-[60%] w-full rounded-lg">
               <ul className="mt-6 space-y-3">
