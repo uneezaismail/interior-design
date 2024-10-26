@@ -19,14 +19,14 @@ const Navbar: React.FC = () => {
     }
   };
 
-  const links = ['/', '/components/about', '/components/services', '/components/portfolio', '/components/testimonials', '/components/contact'];
+  const links = ['/', '/components/about','/components/portfolio', '/components/services', '/components/testimonials', '/components/contact'];
 
   return (
     <header className='flex flex-col md:justify-start text-center border-2 border-gray-100 transition-all duration-300 ease-in-out'>
       <p className='bg-green-950 py-2 items-center text-white text-[0.6rem] sm:text-sm md:text-md rounded-md'>
         Limited Time Offer🌟 Get 20% Off on Your First Design Project! —›
       </p>
-      <nav className='flex justify-between items-center text-center xl:px-20 lg:px-18 md:px-10 px-6 bg-white transition-all duration-300 ease-in-out'>
+      <nav className='flex justify-between items-center text-center xl:px-20 lg:px-14 md:px-10 px-6 bg-white transition-all duration-300 ease-in-out'>
         <div className='flex items-center py-2 justify-between w-full'>
           <div className='flex items-center'>
             <FaBars
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
          
           <ul className='md:flex xl:text-xl lg:text-lg md:text-md text-center items-center hidden font-semibold'>
             {links.map((link, index) => (
-              <li key={index} className='relative md:mx-3 lg:mx-4 rounded-md group'>
+              <li key={index} className='relative  xl:mx-2 rounded-md group'>
                 <Link
                   href={link}
                   className={`block py-2 px-4 text-center hover:text-green-950 rounded-md transition duration-300 ease-in-out ${activeLink === link ? 'text-green-950' : ''}`}
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
 
-          <button className='bg-green-950 lg:text-md hover:bg-green-900 md:p-2 p-1 lg:px-4 md:px-3 px-2 rounded-lg text-white text-sm md:text-md lg:text-lg'>
+          <button className='bg-green-950 lg:text-md hover:bg-green-900 md:p-2 p-2 lg:px-4 md:px-3 px-2 rounded-lg text-white text-sm md:text-md lg:text-lg'>
             BOOK NOW
           </button>
         </div>
@@ -83,3 +83,6 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+
+
