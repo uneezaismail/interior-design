@@ -9,11 +9,11 @@ export default function ContactSection() {
     return (
       <section className="bg-white py-10 lg:px-20 px-6 m-auto">
         <div className="flex justify-center">
-          <h2 className="my-6 text-center text-black font-semibold text-3xl border-b-4 p-1 border-yellow-300 block ">Contact Us</h2>
+          <h2 className="my-6 text-center text-black font-semibold text-3xl border-b-4 p-1 border-yellow-300 block mb-[3rem] md:mb-[7rem]">Contact Us</h2>
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-around items-center">
-          {/* Left Text Section */}
+        
           <div className="mb-6 md:mb-0 md:w-[80%] w-full">
             <h3 className="font-semibold lg:text-2xl md:text-xl text-md text-green-900">Get in Touch</h3>
             <h2 className="lg:text-3xl md:text-2xl text-xl font-semibold">Your Trusted Design Partners</h2>
@@ -56,7 +56,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Contact Form */}
+         
           <div className="bg-gray-50 p-3 rounded shadow-md w-full md:w-[60%]">
             <h2 className="text-green-900 text-2xl font-semibold text-center p-4">Contact</h2>
             <h3 className="text-center font-semibold md:text-3xl text-xl">Get in Touch With PearlVista</h3>

@@ -39,11 +39,11 @@ export default function Home() {
 </div>
       </main>
       <About/>
-      <Portfolio/>
+     <Portfolio/>
+       <ContactSection/>
       <Services/>
       <Testimonials/>
-      <ContactSection/>
-      <HeroImage/>
+      <HeroImage/> 
     </div>
   );
 }
