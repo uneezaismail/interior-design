@@ -1,6 +1,3 @@
-
-
-
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMailOpen } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
@@ -9,7 +6,7 @@ export default function ContactSection() {
     return (
       <section className="bg-white py-10 lg:px-20 px-6 m-auto">
         <div className="flex justify-center">
-          <h2 className="my-6 text-center text-black font-semibold text-3xl border-b-4 p-1 border-yellow-300 block mb-[3rem] md:mb-[7rem]">Contact Us</h2>
+          <h2 className="my-6 text-center  p-1  block mb-[3rem] md:mb-[7rem] text-gray-800 font-bold text-4xl border-b-4 border-yellow-500">Contact Us</h2>
         </div>
 
         <div className="flex flex-col md:flex-row md:justify-around items-center">

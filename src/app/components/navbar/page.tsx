@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className='flex flex-col md:justify-start text-center border-2 border-gray-100 transition-all duration-300 ease-in-out'>
-      <p className='bg-green-950 py-2 items-center text-white text-[0.6rem] sm:text-sm md:text-md rounded-md'>
+      <p className='bg-green-950 py-2 items-center text-white text-[0.7rem] sm:text-md md:text-lg rounded-md'>
         Limited Time Offer🌟 Get 20% Off on Your First Design Project! —›
       </p>
       <nav className='flex justify-between items-center text-center xl:px-20 lg:px-14 md:px-10 px-6 bg-white transition-all duration-300 ease-in-out'>
@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
               size={20}
               onClick={toggleSidebar}
             />
-            <h1 className='lg:text-2xl md:text-xl text-lg font-semibold font-serif'>
+            <h1 className='lg:text-2xl md:text-xl text-lg font-semibold font-serif text-black'>
               PEARL<span className='text-headingcolor'>VISTA</span>
             </h1>
           </div>
@@ -55,13 +55,11 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
 
-          <button className='bg-green-950 lg:text-md hover:bg-green-900 md:p-2 p-2 lg:px-4 md:px-3 px-2 rounded-lg text-white text-sm md:text-md lg:text-lg'>
-            BOOK NOW
+          <button className='bg-green-950 lg:text-md hover:bg-green-900 transition duration-300 md:p-2 p-2 lg:px-4 md:px-3 px-2 rounded-lg text-white text-sm md:text-md lg:text-lg'>
+            <Link href={"/components/book"}>BOOK NOW</Link>
           </button>
         </div>
-      </nav>
-
-    
+      </nav>   
       <div className={`fixed inset-0 bg-gray-900 bg-opacity-75 z-40 md:hidden transition-opacity duration-300 ease-in-out ${isSidebarOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
         <div className={`fixed top-0 left-0 w-2/3 bg-white h-full p-4 transition-transform duration-300 ease-in-out transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <button className='absolute top-4 right-4 text-xl font-semibold' onClick={toggleSidebar}>

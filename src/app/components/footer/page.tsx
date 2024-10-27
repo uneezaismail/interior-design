@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import { FaFacebook } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
@@ -23,26 +24,28 @@ const Footer = () => {
 </div>
     <div className='md:hidden py-4 md:gap-y-4 font-light sm:text-sm text-[0.7rem] md:text-lg flex flex-col'>
             <span className='font-semibold text:sm md:text-md block'>Quick Links</span>
-            <ul className='list-none '>
-            <li>Home</li>
-        <li >About Us</li>
-        <li>Portofolio</li>
-        <li>Services</li>
-        <li>Testiminols</li>
-        <li>Contact</li>
+            <ul className='list-none'>
+            <li className='hover:text-headingcolor'><Link href={"/"}>Home</Link> </li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/about"}>About Us</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/portfolio"}>Portofolio</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/services"}>Services</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/testimonals"}>Testimonals</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/contact"}>Contact</Link></li>
         </ul>
         </div>
 
         </div>
+        
         <div className='md:flex flex-col hidden font-light sm:text-sm text-[0.7rem] md:text-lg'>
             <span className='font-semibold text:sm md:text-md block py-2'>Quick Links</span>
-            <ul className='list-none '>
-            <li>Home</li>
-        <li >About Us</li>
-        <li>Portofolio</li>
-        <li>Services</li>
-        <li>Testiminols</li>
-        <li>Contact</li>
+            
+            <ul className='list-none'>
+            <li className='hover:text-headingcolor'><Link href={"/"}>Home</Link> </li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/about"}>About Us</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/portfolio"}>Portofolio</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/services"}>Services</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/testimonals"}>Testimonals</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/contact"}>Contact</Link></li>
         </ul>
         </div>
         <div className='flex flex-col px-2 font-light sm:text-sm text-[0.7rem] md:text-lg'>

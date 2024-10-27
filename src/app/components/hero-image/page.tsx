@@ -1,5 +1,6 @@
-// components/HeroImage.js
-import Image from 'next/image'; // Importing the Image component from Next.js
+
+import Image from 'next/image'; 
+import Link from 'next/link';
 
 export default function HeroImage() {
   return (
@@ -16,8 +17,8 @@ export default function HeroImage() {
         <h2 className="lg:w-[50%] text-white text-3xl md:text-5xl font-semibold">
           Let&apos;s Create Your Dream Space Together
         </h2>
-        <button className="lg:mt-16 mt-10 border-2 lg:text-2xl border-white text-white py-2 px-6 rounded">
-          Book Now
+        <button className="lg:mt-16 mt-10 border-2 lg:text-2xl border-white hover:bg-white hover:text-black text-white py-2 px-6 rounded">
+        <Link href={"/components/book"}>BOOK NOW</Link>
         </button>
       </div>
     </div>

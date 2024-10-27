@@ -6,17 +6,18 @@ import HeroImage from "./components/hero-image/page";
 import Portfolio from "./components/portfolio/page";
 import Services from "./components/services/page";
 import Testimonials from "./components/testimonials/page";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
       <main>
-        <div className="relative w-full xl:h-[500px] lg:h-[400px] md:h-[350px] sm:h-[300px] h-[200px]">
+        <div className="relative w-full xl:h-[500px] lg:h-[400px] md:h-[400px] sm:h-[400px] h-[300px]">
           <Image
             src="/images/home-page.jpg"
             alt="Home Page"
             layout="fill"
-            objectFit="cover" // This keeps the image aspect ratio
+            objectFit="cover" 
             className="opacity-90"
           />
           
@@ -30,7 +31,7 @@ export default function Home() {
               </h1>
             </div>
             <button className="mt-6 bg-green-900 hover:bg-green-800 border-2 border-yellow-300 text-white xl:p-3 sm:p-2 xl:px-6 px-2 py-1 rounded-full md:text-lg text-sm xl:text-2xl">
-              Explore Our Work
+              <Link href={"/components/portfolio"}>Explore Our Work</Link>
             </button>
           </div>
         </div>
@@ -74,12 +75,14 @@ export default function Home() {
           </div>
         </div>
       </main>
+
+      
       <About />
       <Portfolio />
       <Services />
       <Testimonials />
       <ContactSection />
-      <HeroImage />
+     
     </div>
   );
 }

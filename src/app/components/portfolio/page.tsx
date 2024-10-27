@@ -53,10 +53,10 @@ const Portfolio: React.FC = () => {
     };
 
     return (
-        <div className="w-full mt-14 m-auto mb-10">
+        <div className="w-full m-auto mt-5 mb-10 ">
             <div className='flex flex-col items-center text-center'>
-                <h2 className="text-center text-black font-semibold text-3xl border-b-4 p-1 border-yellow-300 inline-block mt-10">Portfolio</h2>
-                <h3 className="text-black font-bold text-2xl w-[80%] md:w-[60%] lg:text-5xl xl:text-6xl my-6 md:my-10 font-mono">
+                <h2 className="text-center p-1  inline-block text-gray-800 font-bold text-4xl border-b-4 border-yellow-500">Portfolio</h2>
+                <h3 className="text-black font-bold text-2xl w-[80%] md:w-[60%] lg:text-5xl xl:text-6xl my-6 md:my-10 font-serif">
                     Innovative Designs, <span className="text-green-900">Seamless Development</span>
                 </h3>
             </div>
