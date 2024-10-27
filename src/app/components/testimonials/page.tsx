@@ -28,7 +28,7 @@ export default function Testimonials() {
       </div>
 
       <p className="text-center md:text-[5vh] text-lg w-[90%] mx-auto md:my-10 my-5 pb-10 md:leading-10">
-        Discover how we've transformed spaces and exceeded expectations through the voices of our satisfied customers.
+        Discover how we&apos;ve transformed spaces and exceeded expectations through the voices of our satisfied customers. {/* Escape the apostrophe */}
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 w-[90%] sm:w-[70%] md:w-full m-auto gap-3 lg:gap-0 md:px-8 gap-y-20 px-6 lg:px-6">
@@ -37,7 +37,7 @@ export default function Testimonials() {
             <div className="w-32 lg:w-48 h-32 lg:h-48 rounded-full overflow-hidden border-2 border-green-950 absolute left-1/2 transform -translate-x-1/2 -top-10">
               <Image
                 src={testimonial.image}
-                alt={`${testimonial.author}&apos;s picture`} // Changed here
+                alt={`${testimonial.author}&apos;s picture`} // Correctly escaped
                 layout="fill" 
                 objectFit="cover" 
                 className="rounded-full"
