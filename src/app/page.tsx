@@ -2,7 +2,6 @@
 import Image from "next/image";
 import About from "./components/about/page";
 import ContactSection from "./components/contact/page";
-import HeroImage from "./components/hero-image/page";
 import Portfolio from "./components/portfolio/page";
 import Services from "./components/services/page";
 import Testimonials from "./components/testimonials/page";

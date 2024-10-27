@@ -1,5 +1,3 @@
-
-
 "use client"; 
 
 import React, { useState } from 'react';
@@ -16,15 +14,15 @@ const Services = () => {
         </h2>
 
         <p className='md:w-[85%] w-[90%] m-4 md:m-3 py-4 text-base md:text-lg lg:text-xl text-gray-700'>
-          Our comprehensive interior design services are tailored to transform your vision into reality, whether you're looking to create a cozy home environment or a dynamic office space. We pride ourselves on attention to detail, ensuring that every element of your design reflects your unique style and preferences. 
+          Our comprehensive interior design services are tailored to transform your vision into reality, whether you&apos;re looking to create a cozy home environment or a dynamic office space. We pride ourselves on attention to detail, ensuring that every element of your design reflects your unique style and preferences. 
           <span className='block md:inline mt-2'>
-            With innovative designs and meticulous craftsmanship, we aim to exceed your expectations and bring your dream space to life. Trust us to handle every detail, ensuring a seamless and enjoyable experience. Let's create a space that truly feels like home or a productive work environment!
+            With innovative designs and meticulous craftsmanship, we aim to exceed your expectations and bring your dream space to life. Trust us to handle every detail, ensuring a seamless and enjoyable experience. Let&apos;s create a space that truly feels like home or a productive work environment!
           </span>
         </p>
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 mx-auto md:w-[85%] w-[80%]'>
-        {/* Main Large Image */}
+       
         <div className='col-span-1 md:col-span-2 row-span-2 relative'>
           <div className="relative w-full md:w-full m-auto sm:w-[80%] h-[35vh] md:h-[500px] rounded-lg overflow-hidden shadow-lg">
             <Image
