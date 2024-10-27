@@ -29,7 +29,7 @@ const Footer = () => {
         <li className='hover:text-headingcolor'> <Link href={"/components/about"}>About Us</Link></li>
         <li className='hover:text-headingcolor'> <Link href={"/components/portfolio"}>Portofolio</Link></li>
         <li className='hover:text-headingcolor'> <Link href={"/components/services"}>Services</Link></li>
-        <li className='hover:text-headingcolor'> <Link href={"/components/testimonals"}>Testimonals</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/testimonials"}>Testimonals</Link></li>
         <li className='hover:text-headingcolor'> <Link href={"/components/contact"}>Contact</Link></li>
         </ul>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => {
         <li className='hover:text-headingcolor'> <Link href={"/components/about"}>About Us</Link></li>
         <li className='hover:text-headingcolor'> <Link href={"/components/portfolio"}>Portofolio</Link></li>
         <li className='hover:text-headingcolor'> <Link href={"/components/services"}>Services</Link></li>
-        <li className='hover:text-headingcolor'> <Link href={"/components/testimonals"}>Testimonals</Link></li>
+        <li className='hover:text-headingcolor'> <Link href={"/components/testimonials"}>Testimonals</Link></li>
         <li className='hover:text-headingcolor'> <Link href={"/components/contact"}>Contact</Link></li>
         </ul>
         </div>
